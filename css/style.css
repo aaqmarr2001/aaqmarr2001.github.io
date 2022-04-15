@@ -16,13 +16,14 @@ body{
     "footer footer";
   grid-gap: 15px;
 }
-p{
+p,h1,h2,h3,figcaption{
   max-width: 60ch;
-  font-family: "Liberation Serif", "Arial", "Helvetica", sans-serif;
+}
+p{
+  font-family: 'Roboto', "Arial","Helvetica", sans-serif;
 }
 figcaption{
-  max-width: 60ch;
-  font-family: 'EB Garamond', "Liberation Serif", "Helvetica", serif;
+  font-family: 'EB Garamond', "Times New Roman", "Times", serif;
 }
 h1{
     margin:0;
@@ -31,15 +32,15 @@ h2{
     border-bottom: 1px solid rgb(0,0,0);
 }
 h1, h2,h3{
-  font-family: 'Bebas Neue', "Times New Roman", "Arial", sans-serif;
+  font-family: 'Bebas Neue', "Arial","Helvetica", sans-serif;
 }
 
 table{
-  font-family: 'Roboto', "Times New Roman", "Arial", sans-serif;
+  font-family: 'Roboto', "Arial","Helvetica", sans-serif;
 }
 
 aside > p{
-  font-family: 'EB Garamond', "Liberation Serif", "Helvetica", serif;
+  font-family: 'EB Garamond', "Times New Roman", "Times", serif;
 }
 
 header{
