@@ -1,159 +1,43 @@
-
-
-img{
-  max-width: 100%;
-  border: 1px solid rgb(0,0,0);
-}
-
 body{
-    background-color: rgba(150,40,0,0.1);
-  margin: 20px auto;
-    display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  grid-gap: 15px;
-}
-p,h1,h2,h3,figcaption,a,th,td{
-  max-width: 60ch;
-}
+  background: #99ccff;}
+.centr{
+  text-align: center;}
+
+.carousel-item{
+  height: 20rem;
+  background: #777;}
+
+.form-signin{
+  max-width: 500px;
+  margin: 0 auto;
+  color: black;
+  padding: 15px 40px 20px 20px;
+  border-radius: 5px;}
+
 p{
   font-family: 'Roboto', 'Akshar', "Arial","Helvetica", sans-serif;
 }
-figcaption{
+
+.figcaption{
   font-family: 'EB Garamond', 'Roboto Slab', "Times New Roman", "Georgia", serif;
 }
-h1{
-    margin:0;
-}
-h2{
-    border-bottom: 1px solid rgb(0,0,0);
-}
+  
 h1, h2,h3{
   font-family: 'Anton', 'Akshar', "Arial", "Helvetica", sans-serif;
-}
-
-table{
-  font-family: 'Roboto', 'Akshar', "Arial", "Helvetica", sans-serif;
 }
 
 aside > p{
   font-family: 'EB Garamond', 'Roboto Slab', "Times New Roman", "Georgia", serif;
 }
 
-header{
-  margin: 0;
-  grid-area: header;
-  padding: 11px;
-  background-color: rgba(200, 247, 197, 0.5);
+ p,h1,h2,h3,figcaption,a,th,td{
+  max-width: 60ch;
 }
 
-main{
-  grid-area: main;
-  display: grid;
-grid-template-columns: 1fr 3fr;
-grid-template-areas:
-  "images box"
-  "images box"
-  "images box";
-grid-gap: 15px;
-}
-
-section,div {
-  padding: 15px;
-}
-
-alt-bg{
-  background-color: rgb(201,53,68);
-}
-
-a{
-  color: rgb(31, 82, 237);
-}
-a:link{
-  color:rgb(255,255,255);
-}
-a:visited{
-  color: rgb(255,0,255);
-}
-a:hover {
-  color: rgb(0,0,255);
-}
-
-a:active{
-    color: rgb(255,165,0);
-
-}
-
-#box{
-  margin-right:75px;
-  border-top: 1px solid rgb(0,0,0);
-  border-bottom: 1px solid rgb(0,0,0);
-  border-left: 1px solid rgb(0,0,0);
-  border-bottom: 2px solid rgb(0,0,0);
-  border-right: 2px solid rgb(0,0,0);
-  grid-area: box;
-  display: grid;
-  padding-bottom: 10px;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas:
-  "introduction transportation geography"
-  "introduction transportation geography"
-  "introduction transportation geography";
-grid-gap: 15px;
-}
-
-footer{
-  grid-area: footer;
-  margin: 0;
-  padding: 11px;
-  background-color: rgba(200, 247, 197, 0.5);
-}
-
-#introduction{
-  grid-area:introduction;
-}
-#transportation{
-  grid-area:transportation;
-}
-#geography{
-  grid-area:geography;
-}
-#images{
-  border-top: 1px solid rgb(0,0,0);
-  border-bottom: 1px solid rgb(0,0,0);
-  border-left: 1px solid rgb(0,0,0);
-  border-bottom: 2px solid rgb(0,0,0);
-  border-right: 2px solid rgb(0,0,0);
-  margin: 0px 12px 0px 12px;
-  padding: 10px 15px 0px 10px;
-  grid-area:images;
-}
-
-table {
-  border-bottom: 2px solid rgb(0,0,0);
-  border-right: 2px solid rgb(0,0,0);
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border-top: 1px dashed rgb(0,0,0);
-  border-left: 1px dashed rgb(0,0,0);
-  padding: 4px;
-}
-
-th {
-  text-align: left;
-  border-bottom: 2px solid rgb(0,0,0);
-}
-
-.no {
-  text-align: right;
-}
-
-#flag{
-  padding-bottom:50px;
-}
+@media(max-width: 767px){
+  .centr{
+    margin-top: 2rem;
+  }
+  .size-img{
+    width: 200px;
+  }}

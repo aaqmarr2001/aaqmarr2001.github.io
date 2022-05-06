@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Roboto&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
@@ -21,40 +25,31 @@
         <li class="nav-item ml-auto active"><a class="nav-link" href="#">Contact</a></li>
       </ul></div>
   </nav>
-  
-  <h1 class="found text-center mt-3">Registration form</h1>
-  <div class="wrapper my-5">
-    <form class="form-signin">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" name="name" placeholder="Enter your name" required="" autofocus=""/>
-      </div>
-      <div class="form-group">
-        <label>Email address</label>
-        <input type="email" class="form-control" name="email" placeholder="Enter your email address" required=""/>
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <div class="input-group">
-          <input type="password" id="passwd" class="form-control" name="passwd" placeholder="Enter your password" required=""/>
-        </div>
-        <div class="text-primary small mt-2" id="cont"></div>
-      </div>
-      <div class="form-group">
-        <label>Verification of Password</label>
-        <div class="input-group">
-          <input type="password" id="passwd2" class="form-control" name="passwd2" placeholder="Verify your password" required=""/>
-        </div>
-        <div class="text-primary small mt-2" id="cont"></div>
-      </div>
+  <h1 class="found text-center text-danger mt-3">Contact form</h1>
+  <div class="wrapper mt-3 mb-5">
+    <form class="form-signin" onsubmit="sendEmail(); reset(); return false;">
+      <input type="text" class="form-control mb-4" id="name" placeholder="Name" required="" autofocus=""/>
+      <input type="text" class="form-control mb-4" id="company" placeholder="Company" required="" autofocus=""/>
+      <input type="email" class="form-control mb-4" id="email" placeholder="Email" required=""/>
+      <input type="text" class="form-control mb-4" id="phone" placeholder="Phone" required=""/>
+      <textarea class="form-control mb-4" id="msg" placeholder="Message" rows="10"></textarea>
       <button class="btn btn-lg btn-primary btn-block" id="buton">Submit</button>
       <div class="text-center text-primary mt-3" id="outp"></div>
       <div class="text-center mt-3"><a href="index.html">Back to home page</a></div>
     </form>
   </div>
+
+  <footer class="text-right text-dark pb-5">
+    <div class="container">
+      <div class="text-right">Written and composed by: </div>
+      <div class="text-right">Aqmar Areeb Chaudhury </div>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
